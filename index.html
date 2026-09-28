@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>パープルマッチ｜紫の男性と、出会う。— 提案型マッチング（LINEで完結）</title>
+<meta name="description" content="パープルマッチは、16タイプの「紫（分析家：ENTJ・ENTP・INTJ・INTP）」の男性だけが集まる提案型マッチング。いいねもメッセージも不要、LINEで完結。紫の男性の年収・仕事・付き合うメリットをデータで解説。">
+<meta property="og:title" content="パープルマッチ｜紫の男性と、出会う。">
+<meta property="og:description" content="論理で動く男性（ENTJ・ENTP・INTJ・INTP）だけが集まる、提案型マッチング。いいね不要・メッセージ不要・LINEで完結。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-purplematch.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- GA4: 計測IDが決まったらコメントを外す
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+<style>
+:root{
+  --bg:#F7F4FB;--bg2:#EFE9F7;--card:#FFFFFF;
+  --ink:#1F1A2E;--ink2:#514866;--muted:#7B7290;--line:#E2DAEE;
+  --p:#6B4E9B;--p2:#4A3474;--p3:#2E1F4D;--pl:#E9E1F5;--pl2:#D6C8EA;
+  --gold:#B8963E;--goldl:#F4EBD3;
+  --w:#F1ECF8;
+  --ser:"Shippori Mincho B1","Hiragino Mincho ProN",serif;
+  --sans:"Zen Kaku Gothic New","Hiragino Sans",sans-serif;
+  --en:"Figtree","Zen Kaku Gothic New",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.8;font-size:15.5px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:560px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--ser);font-weight:600;line-height:1.35;margin:0}
+h2{font-size:26px;letter-spacing:.01em}
+h3{font-size:18px}
+p{margin:0}
+.en{font-family:var(--en);letter-spacing:.14em;text-transform:uppercase;font-size:11px;color:var(--p);font-weight:600}
+.lead{color:var(--ink2);margin-top:12px}
+section{padding:64px 0}
+.sec-h{margin-bottom:28px}
+.sec-h .en{display:block;margin-bottom:10px}
+.small{font-size:12.5px;color:var(--muted);line-height:1.7}
+.note{font-size:12px;color:var(--muted);line-height:1.7;margin-top:14px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(247,244,251,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none}
+.logo .mark{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--p),var(--p3));position:relative}
+.logo .mark:after{content:"";position:absolute;inset:8px;border-radius:50%;background:var(--goldl)}
+.logo b{font-family:var(--ser);font-size:16px;letter-spacing:.06em}
+.logo small{font-family:var(--en);font-size:9px;letter-spacing:.2em;color:var(--muted);display:block;line-height:1;margin-top:2px}
+.hbtn{font-size:12.5px;font-weight:700;color:#fff;background:var(--p);padding:9px 14px;border-radius:999px;text-decoration:none}
+
+/* FV */
+.fv{position:relative;overflow:hidden;background:radial-gradient(120% 80% at 20% 0%,#EDE4F8 0%,var(--bg) 55%),var(--bg);padding:52px 0 40px}
+.fv:before{content:"";position:absolute;right:-90px;top:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#CDB9E6,transparent 65%);opacity:.9}
+.fv:after{content:"";position:absolute;left:-120px;bottom:-140px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,#E5D9F3,transparent 65%)}
+.fv .wrap{position:relative}
+.fv h1{font-size:40px;line-height:1.25;letter-spacing:.02em;margin-top:14px}
+.fv h1 .pp{color:var(--p2)}
+.fv .sub{font-size:16px;color:var(--ink2);margin-top:16px;line-height:1.9}
+.types{display:flex;gap:6px;flex-wrap:wrap;margin-top:18px}
+.types span{font-family:var(--en);font-weight:600;font-size:12px;letter-spacing:.08em;background:#fff;border:1px solid var(--pl2);color:var(--p2);padding:5px 10px;border-radius:999px}
+.fvfeat{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px}
+.fvfeat div{background:rgba(255,255,255,.75);border:1px solid var(--line);border-radius:12px;padding:10px 6px;text-align:center}
+.fvfeat b{display:block;font-family:var(--ser);font-size:14px;color:var(--p2)}
+.fvfeat span{font-size:11px;color:var(--muted)}
+.cta2{display:grid;gap:10px;margin-top:24px}
+.btn{display:flex;align-items:center;justify-content:space-between;gap:10px;text-decoration:none;border-radius:14px;padding:16px 18px;font-weight:700;font-size:15px;transition:transform .15s}
+.btn:active{transform:scale(.985)}
+.btn .l{display:block}
+.btn .l small{display:block;font-weight:500;font-size:11.5px;opacity:.85;letter-spacing:.02em}
+.btn .arr{font-family:var(--en);font-size:18px}
+.btn.w{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;box-shadow:0 10px 24px rgba(74,52,116,.25)}
+.btn.m{background:#fff;color:var(--p2);border:1.5px solid var(--p2)}
+.line-note{font-size:11.5px;color:var(--muted);margin-top:10px;text-align:center}
+.pre{margin-top:16px;background:#fff;border:1px solid var(--pl2);border-left:4px solid var(--p);border-radius:12px;padding:12px 14px;font-size:13px;color:var(--ink2);line-height:1.7}
+.pre b{color:var(--p2)}
+
+/* type cards */
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 14px;position:relative;overflow:hidden}
+.tcard:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(var(--p),var(--p3))}
+.tcard .code{font-family:var(--en);font-weight:600;font-size:18px;letter-spacing:.06em;color:var(--p2)}
+.tcard .nm{font-family:var(--ser);font-size:14px;margin-top:2px}
+.tcard p{font-size:12.5px;color:var(--ink2);margin-top:8px;line-height:1.7}
+.tcard .tag{position:absolute;right:10px;top:12px;font-size:10px;color:var(--muted);background:var(--bg2);padding:2px 8px;border-radius:999px}
+.common{margin-top:18px;background:var(--p3);color:#fff;border-radius:16px;padding:20px 18px}
+.common h3{color:#fff;font-size:16px;margin-bottom:10px}
+.common ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.common li{display:flex;gap:10px;font-size:13.5px;line-height:1.7}
+.common li:before{content:"◆";color:#C9B4E8;font-size:10px;margin-top:6px;flex:none}
+
+/* data */
+.data{background:var(--w);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 14px}
+.stat .k{font-size:11.5px;color:var(--muted);line-height:1.5}
+.stat .v{font-family:var(--en);font-weight:600;font-size:32px;color:var(--p2);line-height:1.1;margin-top:6px}
+.stat .v small{font-size:14px;font-family:var(--sans);font-weight:700;margin-left:2px}
+.stat .d{font-size:11.5px;color:var(--ink2);margin-top:6px;line-height:1.5}
+.chart{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 16px}
+.chart h3{font-size:15px;margin-bottom:4px}
+.chart .sub{font-size:11.5px;color:var(--muted);margin-bottom:14px}
+.bars{display:grid;gap:10px}
+.bar{display:grid;grid-template-columns:52px 1fr 44px;align-items:center;gap:10px;font-size:13px}
+.bar .lab{color:var(--ink2);font-weight:500}
+.bar .track{height:14px;background:var(--bg2);border-radius:4px;position:relative}
+.bar .fill{position:absolute;left:0;top:0;bottom:0;border-radius:0 4px 4px 0;background:#BDB3CB}
+.bar.hi .fill{background:linear-gradient(90deg,var(--p),var(--p2))}
+.bar .val{font-family:var(--en);font-weight:600;color:var(--ink2);text-align:right}
+.bar.hi .val,.bar.hi .lab{color:var(--p2);font-weight:700}
+.growth{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.growth div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 8px;text-align:center}
+.growth .t{font-family:var(--en);font-weight:600;font-size:13px;color:var(--p2)}
+.growth .g{font-family:var(--en);font-weight:600;font-size:20px;line-height:1.1;margin-top:2px}
+.growth .s{font-size:10.5px;color:var(--muted)}
+.src{font-size:11px;color:var(--muted);line-height:1.6;margin-top:16px}
+
+/* merits */
+.mlist{display:grid;gap:10px}
+.mitem{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 16px 16px 14px;display:grid;grid-template-columns:34px 1fr;gap:12px}
+.mitem .n{font-family:var(--en);font-weight:600;color:var(--p);font-size:20px;line-height:1;padding-top:3px}
+.mitem h3{font-size:16px}
+.mitem p{font-size:13.5px;color:var(--ink2);margin-top:6px;line-height:1.75}
+.honest{margin-top:22px;background:var(--goldl);border:1px solid #E8D9A8;border-radius:16px;padding:18px 16px}
+.honest h3{font-size:15px;color:#7A6224;margin-bottom:8px}
+.honest p{font-size:13.5px;color:#5B4A1D;line-height:1.75}
+.honest ul{margin:8px 0 0;padding-left:18px;font-size:13.5px;color:#5B4A1D;line-height:1.8}
+
+/* men */
+.men{background:var(--p3);color:#fff}
+.men .en{color:#C9B4E8}
+.men h2{color:#fff}
+.men .lead{color:#D9CDEB}
+.mgrid{display:grid;gap:10px}
+.mg{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:15px 16px}
+.mg h3{font-size:15.5px;color:#fff}
+.mg p{font-size:13px;color:#D9CDEB;margin-top:5px;line-height:1.7}
+.men .btn.w{background:#fff;color:var(--p3);box-shadow:none;margin-top:22px}
+
+/* flow */
+.steps{display:grid;gap:0}
+.step{display:grid;grid-template-columns:44px 1fr;gap:14px;position:relative;padding-bottom:22px}
+.step:not(:last-child):before{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:var(--pl2)}
+.step .no{width:44px;height:44px;border-radius:50%;background:var(--p2);color:#fff;font-family:var(--en);font-weight:600;font-size:15px;display:flex;align-items:center;justify-content:center}
+.step h3{font-size:16.5px;padding-top:8px}
+.step p{font-size:13.5px;color:var(--ink2);margin-top:6px;line-height:1.75}
+.nono{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.nono span{font-size:12px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--ink2)}
+.nono span b{color:var(--p)}
+
+/* screening */
+.scr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 14px}
+.sc .ic{width:34px;height:34px;border-radius:10px;background:var(--pl);display:flex;align-items:center;justify-content:center;color:var(--p2);font-family:var(--en);font-weight:600;font-size:13px;margin-bottom:10px}
+.sc h3{font-size:15px}
+.sc p{font-size:12.5px;color:var(--ink2);margin-top:6px;line-height:1.7}
+
+/* faq */
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 16px;margin-bottom:8px}
+summary{cursor:pointer;list-style:none;font-weight:700;font-size:14.5px;padding:15px 0;display:flex;justify-content:space-between;gap:10px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:var(--en);color:var(--p);font-size:20px;flex:none}
+details[open] summary:after{content:"−"}
+details p{font-size:13.5px;color:var(--ink2);padding:0 0 15px;line-height:1.75}
+
+/* final */
+.final{background:linear-gradient(160deg,#EFE6F8,var(--bg));text-align:center}
+.final h2{font-size:28px}
+.final .cta2{margin-top:26px;text-align:left}
+footer{padding:30px 0 40px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.8}
+footer .logo{margin-bottom:10px}
+
+@media (min-width:720px){
+  .fv h1{font-size:48px}
+  section{padding:80px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark"></span><span><b>パープルマッチ</b><small>PURPLE MATCH</small></span></a>
+    <a class="hbtn" href="#cta">事前登録（無料）</a>
+  </div>
+</header>
+
+<!-- FV -->
+<section class="fv" id="top">
+  <div class="wrap">
+    <span class="en">Purple Match — 事前登録受付中</span>
+    <h1>紫の男性と、<br><span class="pp">出会う。</span></h1>
+    <p class="sub">16タイプのうち、論理で動く4タイプ「紫」。<br>その男性だけが集まる、提案型マッチングです。<br>いいねも、メッセージも、いりません。</p>
+    <div class="pre"><b>いまは事前登録の受付中です。</b>LINEで登録しておくと、リリース時に優先してご案内します。登録は無料、途中でやめても大丈夫。</div>
+    <div class="types"><span>ENTJ</span><span>ENTP</span><span>INTJ</span><span>INTP</span></div>
+    <div class="fvfeat">
+      <div><b>提案型</b><span>探さない・選ばれる</span></div>
+      <div><b>LINE完結</b><span>アプリ不要</span></div>
+      <div><b>審査あり</b><span>タイプ＋職業</span></div>
+    </div>
+    <div class="cta2" id="cta">
+      <a class="btn w js-line" data-side="woman" href="#"><span class="l">紫の男性と出会いたい<small>女性の事前登録（無料・LINEで1分）</small></span><span class="arr">→</span></a>
+      <a class="btn m js-line" data-side="man" href="#"><span class="l">自分は紫の男性です<small>男性の事前登録（ENTJ・ENTP・INTJ・INTP）</small></span><span class="arr">→</span></a>
+    </div>
+    <p class="line-note">LINE公式アカウントが開きます。事前登録は無料で、リリース時に優先案内が届きます。</p>
+    <a class="btn m" href="shindan/" style="margin-top:14px;background:transparent;border-color:var(--pl2)"><span class="l">まずは3分、紫との相性診断<small>12問・無料・登録不要</small></span><span class="arr">→</span></a>
+  </div>
+</section>
+
+<!-- 紫とは -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="en">Who are “purple”?</span>
+      <h2>「紫」とは、<br>頭で恋をする4タイプ。</h2>
+      <p class="lead">16タイプ性格診断で、直感（N）と思考（T）を併せ持つ4タイプ。診断結果では紫色で表されることが多い、いわば「頭脳派」のグループです。</p>
+    </div>
+    <div class="tgrid">
+      <div class="tcard"><span class="tag">決める人</span><div class="code">ENTJ</div><div class="nm">決めて、動かす。</div><p>目標から逆算して人を動かす。決断が速く、恋愛も「付き合うなら結婚まで」と設計しがち。</p></div>
+      <div class="tcard"><span class="tag">ひらめく人</span><div class="code">ENTP</div><div class="nm">議論が、愛情表現。</div><p>アイデアと会話が尽きない。退屈が最大の敵で、知的にわくわくする相手に弱い。</p></div>
+      <div class="tcard"><span class="tag">設計する人</span><div class="code">INTJ</div><div class="nm">静かに、長期戦。</div><p>口数は少ないが、決めた相手には一途。将来設計を淡々と実行するタイプ。</p></div>
+      <div class="tcard"><span class="tag">考える人</span><div class="code">INTP</div><div class="nm">理解されたい、深く。</div><p>好奇心の塊。自分の世界を面白がってくれる人に、ゆっくり心を開く。</p></div>
+    </div>
+    <div class="common">
+      <h3>4タイプに共通する「紫らしさ」</h3>
+      <ul>
+        <li>感情より論理。納得できる理由があれば、すぐ動く</li>
+        <li>雑談より本題。「なぜ？」を一緒に考えられる相手を好む</li>
+        <li>仕事はIT・エンジニア・経営・企画・金融に偏る</li>
+        <li>束縛が苦手で、相手のひとり時間も尊重する</li>
+        <li>長期視点。結婚・家計・キャリアを「設計」する</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- データ -->
+<section class="data">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="en">Data</span>
+      <h2>紫は、<br>高年収層に入りやすい。</h2>
+      <p class="lead">「平均年収」ではなく「上位層に入る確率」で見ると、紫の強さがはっきり出ます。</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="k">高年収層（年収$150k以上）に入る割合</div><div class="v">1.5<small>〜1.9倍</small></div><div class="d">他の3色（青・黄・緑）との比較。30〜59歳</div></div>
+      <div class="stat"><div class="k">自営・起業している割合</div><div class="v">12.1<small>%</small></div><div class="d">4色中1位（青7.5%・黄8.8%・緑11.5%）</div></div>
+      <div class="stat"><div class="k">16タイプ中 平均年収</div><div class="v">1<small>位</small></div><div class="d">ENTJが1位、ENTPが3位</div></div>
+      <div class="stat"><div class="k">ソフトウェアエンジニアに占める紫</div><div class="v">26<small>%</small></div><div class="d">4タイプすべてが一般人口比で過剰（INTJは3.4倍）</div></div>
+    </div>
+
+    <div class="chart">
+      <h3>高年収層（$150k以上）に入る割合 — 色別</h3>
+      <div class="sub">30〜59歳、米国調査。紫＝ENTJ/ENTP/INTJ/INTP</div>
+      <div class="bars" role="img" aria-label="高年収層に入る割合。紫11.4%、青7.8%、黄6.1%、緑6.1%">
+        <div class="bar hi"><span class="lab">紫 NT</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="val">11.4%</span></div>
+        <div class="bar"><span class="lab">青 SJ</span><div class="track"><div class="fill" style="width:68%"></div></div><span class="val">7.8%</span></div>
+        <div class="bar"><span class="lab">黄 SP</span><div class="track"><div class="fill" style="width:54%"></div></div><span class="val">6.1%</span></div>
+        <div class="bar"><span class="lab">緑 NF</span><div class="track"><div class="fill" style="width:54%"></div></div><span class="val">6.1%</span></div>
+      </div>
+    </div>
+
+    <div class="growth">
+      <div><div class="t">ENTJ</div><div class="g">×1.8</div><div class="s">20代→30代の年収</div></div>
+      <div><div class="t">ENTP</div><div class="g">×1.9</div><div class="s">20代→30代の年収</div></div>
+      <div><div class="t">INTJ</div><div class="g">×2.0</div><div class="s">20代→30代の年収</div></div>
+    </div>
+    <p class="note">紫は20代の年収が控えめでも、30代で大きく伸びる「伸びしろ型」。特にINTP・INTJは学生比率が16タイプ中最上位で、若いうちは二極化しています。だからパープルマッチでは、タイプに加えて<b>職業も確認</b>しています。</p>
+    <p class="src">出典：Truity「Personality Type and Career Achievement」(2019, 米国, n=72,331, 21歳以上)／Capretz (2003) ソフトウェアエンジニアの性格タイプ調査。金額は米ドル。日本の年収を保証するものではありません。</p>
+  </div>
+</section>
+
+<!-- 女性向けメリット -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="en">Why purple?</span>
+      <h2>紫の男性と<br>付き合う・結婚するメリット</h2>
+      <p class="lead">「頭で恋をする」人と一緒にいると、毎日はこう変わります。</p>
+    </div>
+    <div class="mlist">
+      <div class="mitem"><div class="n">01</div><div><h3>機嫌で振り回されない</h3><p>感情より論理で動くので、気分の波が小さい。「なんで怒ってるの？」を察するゲームがほぼ発生しません。</p></div></div>
+      <div class="mitem"><div class="n">02</div><div><h3>問題が起きたら、愚痴より対策</h3><p>お金・住まい・親のこと。困りごとを「解決する課題」として一緒に処理してくれます。</p></div></div>
+      <div class="mitem"><div class="n">03</div><div><h3>結婚・家計・キャリアを「設計」する</h3><p>決めたら計画的に進める。将来の話が「いつかね」で終わらず、具体的な数字と期限になります。</p></div></div>
+      <div class="mitem"><div class="n">04</div><div><h3>束縛しない。ひとり時間を尊重し合える</h3><p>自分の時間を大事にする分、相手の時間にも踏み込まない。自立した関係が自然に続きます。</p></div></div>
+      <div class="mitem"><div class="n">05</div><div><h3>会話が、ずっと面白い</h3><p>「なぜ？」「どうなる？」を一緒に楽しめる。10年経っても話すことがなくならない相手です。</p></div></div>
+      <div class="mitem"><div class="n">06</div><div><h3>収入の伸びしろが大きい</h3><p>紫は高年収層に入る確率が他の色の1.5〜1.9倍。20代→30代で年収がほぼ2倍になるタイプが多く、起業率も最も高いグループです。</p></div></div>
+    </div>
+    <div class="honest">
+      <h3>正直に言うと、こんな面もあります</h3>
+      <p>だからこそ、「紫が合う人」に絞ってご紹介しています。</p>
+      <ul>
+        <li>言葉での愛情表現は少なめ。行動や計画で示すタイプ</li>
+        <li>共感より先に解決策が出てくる（聞いてほしいだけの日は、そう伝えると通じます）</li>
+        <li>雑談・社交辞令が苦手。そのぶん本音は率直</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 男性向け -->
+<section class="men">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="en">For purple men</span>
+      <h2>紫の男性へ。<br>「合う人」からしか、<br>届きません。</h2>
+      <p class="lead">プロフィールを盛る必要も、いいねを送り続ける必要もありません。あなたを最初から理解している人だけが、待っています。</p>
+    </div>
+    <div class="mgrid">
+      <div class="mg"><h3>議論を楽しめる相手だけ</h3><p>登録している女性は「紫と付き合いたい」と最初に選んだ人。話が噛み合わないストレスが起きにくい。</p></div>
+      <div class="mg"><h3>探す時間をゼロに</h3><p>提案が届いたら、YES/NOを返すだけ。マッチングアプリの「作業」を全部こちらで引き受けます。</p></div>
+      <div class="mg"><h3>条件は最初から一致</h3><p>結婚を視野に入れた出会いを前提にしているので、温度差の探り合いがいりません。</p></div>
+      <div class="mg"><h3>タイプと職業で審査</h3><p>16タイプの結果と職業を確認した方だけが登録できます。だから、女性側も安心して会えます。</p></div>
+    </div>
+    <a class="btn w js-line" data-side="man" href="#"><span class="l">紫の男性として事前登録する<small>ENTJ・ENTP・INTJ・INTP／LINEで1分・無料</small></span><span class="arr">→</span></a>
+  </div>
+</section>
+
+<!-- 仕組み -->
+<section>
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="en">How it works</span>
+      <h2>探さない。<br>提案が届く。</h2>
+      <p class="lead">アプリのインストールも、プロフィール巡回もなし。すべてLINEの中で完結します。リリース後の流れはこうです。</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="no">1</div><div><h3>LINEで事前登録（いまここ）</h3><p>女性・男性それぞれのボタンからLINE公式アカウントを追加し、年代・エリア（男性はタイプも）を選ぶだけ。1分で完了します。</p></div></div>
+      <div class="step"><div class="no">2</div><div><h3>リリース時に、優先案内が届く</h3><p>事前登録の方から順にご案内します。そのとき16タイプ・仕事・結婚への温度感を伺い、正式登録になります。</p></div></div>
+      <div class="step"><div class="no">3</div><div><h3>「この人と、この日に」と提案が届く</h3><p>相性と条件が合う相手を、こちらから提案します。プロフィールを眺めて選ぶ作業はありません。</p>
+        <div class="nono"><span><b>×</b> いいね</span><span><b>×</b> メッセージのやり取り</span><span><b>×</b> 日程調整</span></div></div></div>
+      <div class="step"><div class="no">4</div><div><h3>OKなら、会う日と場所が決まる</h3><p>双方がYESなら日時・場所まで確定してお知らせ。あとは当日、会うだけ。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 審査 -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="en">Screening</span>
+      <h2>安心して会えるように。</h2>
+    </div>
+    <div class="scr">
+      <div class="sc"><div class="ic">16</div><h3>タイプ確認</h3><p>男性は16タイプ診断の結果画面を提出。紫（ENTJ・ENTP・INTJ・INTP）の方のみ登録できます。</p></div>
+      <div class="sc"><div class="ic">職</div><h3>職業確認</h3><p>お仕事の内容を確認しています。「紫＝高年収」に頼らず、実際の状況を見ています。</p></div>
+      <div class="sc"><div class="ic">1:1</div><h3>提案は1件ずつ</h3><p>同時に何人にも声をかける仕組みではありません。ひとりずつ、丁寧に。</p></div>
+      <div class="sc"><div class="ic">◎</div><h3>無断キャンセル対策</h3><p>確定後のキャンセルはルールを設け、真剣な方だけが残る場にしています。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="en">FAQ</span>
+      <h2>よくある質問</h2>
+    </div>
+    <details><summary>自分の16タイプがわかりません</summary><p>無料の16タイプ性格診断（Web上の診断サイト）を受けると4文字のタイプがわかります。結果の画面をLINEで送っていただければ、こちらで確認します。</p></details>
+    <details><summary>紫以外の男性は登録できますか？</summary><p>現在は紫（ENTJ・ENTP・INTJ・INTP）の男性に限定しています。女性はタイプを問いません。</p></details>
+    <details><summary>女性はどんな人が向いていますか？</summary><p>会話や議論を楽しめる方、将来を計画的に考えたい方、相手のひとり時間を尊重できる方。「言葉より行動で示す人」に安心できる方は、とても相性が良いです。迷ったら<a href="shindan/">紫との相性診断（3分）</a>で確かめられます。</p></details>
+    <details><summary>結婚前提ですか？</summary><p>真剣な交際・結婚を視野に入れた出会いの場です。登録時に「結婚への温度感」を伺い、近い方同士をご提案します。</p></details>
+    <details><summary>料金はかかりますか？</summary><p>事前登録は無料です。料金プランはリリース時にLINE上でご案内し、事前登録の方には優先してお知らせします。案内を見てから続けるかどうか決めていただけます。</p></details>
+    <details><summary>いつリリースされますか？</summary><p>事前登録の人数がそろい次第、エリアごとに順次ご案内します。時期はLINEでお知らせします。</p></details>
+    <details><summary>アプリのインストールは必要ですか？</summary><p>不要です。登録から提案、日程の確定まで、すべてLINE公式アカウントのトーク上で完結します。</p></details>
+  </div>
+</section>
+<!-- 最終CTA -->
+<section class="final">
+  <div class="wrap">
+    <span class="en">Purple Match</span>
+    <h2>頭で恋をする人に、<br>ちゃんと合う人を。</h2>
+    <p class="lead">事前登録は無料・LINEで1分。リリース時に優先案内。</p>
+    <div class="cta2">
+      <a class="btn w js-line" data-side="woman" href="#"><span class="l">紫の男性と出会いたい<small>女性の事前登録（無料）</small></span><span class="arr">→</span></a>
+      <a class="btn m js-line" data-side="man" href="#"><span class="l">自分は紫の男性です<small>男性の事前登録（ENTJ・ENTP・INTJ・INTP）</small></span><span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark"></span><span><b>パープルマッチ</b><small>PURPLE MATCH</small></span></a>
+    <p>紫（ENTJ・ENTP・INTJ・INTP）の男性に特化した、提案型マッチングサービス。</p>
+    <p>※ 本サービスは性格診断を提供する各団体・サイトとは無関係です。タイプの確認には、お使いの16タイプ診断の結果をご利用ください。</p>
+    <p>※ 本ページの年収・職業データは米国の調査（Truity 2019 ほか）に基づく参考値であり、会員の年収を保証するものではありません。「16タイプ」は性格タイプ理論に基づく分類です。</p>
+    <p style="margin-top:10px">© 2026 Purple Match</p>
+  </div>
+</footer>
+
+<script>
+/* ====== 設定：LINE公式アカウントのURL（作成後に差し替え） ====== */
+var LINE_URL = 'https://lin.ee/pBXdFGt';               // 友だち追加URL（LINE公式の短縮URL）
+var LINE_MSG = {                                    // 追加後に自動で入力しておくメッセージ（任意）
+  woman: '紫の男性と出会いたい',
+  man:   '紫の男性として登録'
+};
+var LINE_OA_ID = '@852csxjn';                       // oaMessage 形式（メッセージ入力済み）で開く
+
+document.querySelectorAll('.js-line').forEach(function(a){
+  var side = a.getAttribute('data-side');
+  var url = LINE_URL;
+  if (LINE_OA_ID && LINE_MSG[side]) {
+    url = 'https://line.me/R/oaMessage/' + LINE_OA_ID + '/?' + encodeURIComponent(LINE_MSG[side]);
+  }
+  a.setAttribute('href', url);
+  a.addEventListener('click', function(){
+    if (window.gtag) gtag('event', 'line_cta_click', { side: side, placement: side === 'header' ? 'header' : a.closest('section') && a.closest('section').className || 'body' });
+  });
+});
+</script>
+</body>
+</html>
