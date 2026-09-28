@@ -158,6 +158,35 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .nono{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
 .nono span{font-size:12px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--ink2)}
 .nono span b{color:var(--p)}
+/* LINEチャット風 */
+.chat{margin-top:12px;background:#8AA4C6;border-radius:14px;padding:12px 12px 8px;display:grid;gap:8px}
+.chat .me,.chat .op{max-width:84%;font-size:12.5px;line-height:1.6;padding:8px 11px;border-radius:14px;color:var(--ink)}
+.chat .me{background:#8DE07A;justify-self:end;border-top-right-radius:4px}
+.chat .op{background:#fff;justify-self:start;border-top-left-radius:4px}
+.chat .op b{display:block;color:var(--p);font-size:12px;margin-bottom:2px}
+.chat .op span{display:block;margin-top:4px;font-size:11.5px;color:var(--ink2)}
+.chat .cap{font-size:10.5px;color:#fff;opacity:.9;line-height:1.5}
+/* 比較図 */
+.cmp{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 16px 16px;margin-bottom:26px}
+.cmp-t{text-align:center;font-family:var(--ser);font-size:20px;font-weight:600;margin-bottom:16px;letter-spacing:.02em}
+.cmp-t em{font-style:normal;color:var(--p)}
+.cmp-head{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px}
+.cmp-head span{display:block;text-align:center;font-size:12.5px;font-weight:700;border-radius:999px;padding:7px 6px;letter-spacing:.02em}
+.cmp-head .a{background:#A09BAD;color:#fff}
+.cmp-head .b{background:var(--p);color:#fff}
+.cmp-reg{border:1.5px solid #C5BFD1;border-radius:10px;text-align:center;padding:9px;font-weight:700;font-size:14px;background:#fff}
+.cmp-body{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cmp .col{position:relative;padding:14px 0 28px}
+.cmp .col:before{content:"";position:absolute;left:50%;top:0;bottom:8px;width:8px;margin-left:-4px;background:#CFCAD8}
+.cmp .col:after{content:"";position:absolute;left:50%;bottom:0;margin-left:-13px;border-left:13px solid transparent;border-right:13px solid transparent;border-top:16px solid #CFCAD8}
+.cmp .col.b:before{background:var(--p)}
+.cmp .col.b:after{border-top-color:var(--p)}
+.cmp .nd{position:relative;background:#fff;border:1.5px solid #C5BFD1;border-radius:10px;text-align:center;padding:8px 4px;font-size:13px;font-weight:600;color:var(--ink2);margin-bottom:10px;line-height:1.5}
+.cmp .col.b{display:flex;align-items:center;justify-content:center}
+.cmp .big{position:relative;background:var(--p);color:#fff;border-radius:14px;padding:18px 12px;text-align:center;font-weight:700;font-size:16px;line-height:1.5;width:100%;box-shadow:0 8px 22px rgba(107,78,155,.28)}
+.cmp .big small{display:block;font-size:11.5px;font-weight:500;color:#E9DFF7;margin-top:8px;line-height:1.55}
+.cmp-go{background:var(--p2);color:#fff;border-radius:12px;text-align:center;padding:14px 16px;font-family:var(--ser);font-size:22px;font-weight:600;line-height:1.3}
+.cmp-go small{display:block;font-family:var(--sans);font-size:12px;font-weight:500;color:#D9CCEF;margin-top:4px}
 .why{margin-top:6px;background:var(--p3);color:#fff;border-radius:16px;padding:20px 18px}
 .why h3{color:#fff;font-size:16px;margin-bottom:10px}
 .why ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
@@ -337,12 +366,39 @@ footer .logo{margin-bottom:10px}
     <div class="sec-h">
       <span class="en">How it works</span>
       <h2>探さない。いいねもしない。<br>カフェに行くだけ。</h2>
-      <p class="lead">やることは「空いてる日を送る」と「当日カフェに行く」の2つ。相手選びも日程調整も店選びも、全部こちらでやります。リリース後の流れはこうです。</p>
+      <p class="lead">やることは「空いてる日を送る」と「当日カフェに行く」の2つ。相手選びも日程調整も店選びも、全部こちらでやります。</p>
     </div>
+    <div class="cmp" aria-label="通常のマッチングアプリとパープルマッチの流れの比較">
+      <div class="cmp-t">面倒なし。<em>『最短で』</em>会える</div>
+      <div class="cmp-head"><span class="a">通常のマッチングアプリ</span><span class="b">パープルマッチ</span></div>
+      <div class="cmp-reg">会員登録</div>
+      <div class="cmp-body">
+        <div class="col a">
+          <div class="nd">相手を探す</div>
+          <div class="nd">いいね／スワイプ</div>
+          <div class="nd">マッチング成立</div>
+          <div class="nd">メッセージで会話</div>
+          <div class="nd">デートに誘う</div>
+          <div class="nd">日程調整</div>
+          <div class="nd">お店を探す</div>
+        </div>
+        <div class="col b">
+          <div class="big">空いてる日を<br>送るだけ<small>相手・日時・カフェは<br>こちらで決めて<br>LINEにお届け</small></div>
+        </div>
+      </div>
+      <div class="cmp-go">カフェに行く<small>初回は1時間で解散</small></div>
+    </div>
+    <p class="lead" style="margin-bottom:22px">リリース後の流れはこうです。</p>
     <div class="steps">
       <div class="step"><div class="no">1</div><div><h3>LINEで事前登録（いまここ）</h3><p>ボタンからLINE公式アカウントを追加し、女性／男性・年代・エリア（男性はタイプも）をタップで選ぶだけ。1分で完了します。</p></div></div>
       <div class="step"><div class="no">2</div><div><h3>リリース時に、優先案内が届く</h3><p>事前登録の方から順にご案内します。そのとき16タイプ・仕事・結婚への温度感を伺い、正式登録になります。</p></div></div>
       <div class="step"><div class="no">3</div><div><h3>空いてる日を送る → デートの予定が届く</h3><p>LINEで空いてる日を送るだけ。相性と条件が合う相手を、日時・カフェとセットで「この人と、この日に、ここで1時間」の形でお届けします。プロフィールを眺めて選ぶ作業も、日程調整のやり取りもありません。</p>
+        <div class="chat" aria-label="LINEでのやり取りのイメージ">
+          <div class="me">今週は土曜の午後と、日曜なら1日空いてます</div>
+          <div class="op"><b>デートのご提案</b>10/4（土）14:00〜15:00<br>INTJ・32歳・ITコンサル<br>渋谷「◯◯珈琲」（駅徒歩3分）<br><span>OKなら「はい」と返信 → 確定</span></div>
+          <div class="me">はい</div>
+          <div class="cap">※ イメージです。相手の情報は事前にプロフィールとしてお届けします。</div>
+        </div>
         <div class="nono"><span><b>×</b> いいね</span><span><b>×</b> メッセージのやり取り</span><span><b>×</b> 日程調整</span></div></div></div>
       <div class="step"><div class="no">4</div><div><h3>OKなら、当日カフェに行くだけ</h3><p>双方がYESで確定。当日は待ち合わせのカフェに行って1時間、それで解散。「また会いたい」なら次の予定を決め、そうでなければそこで終わり。引き延ばしはありません。</p></div></div>
     </div>
