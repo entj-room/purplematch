@@ -419,8 +419,17 @@ footer a{color:var(--ink2)}
 var LINE_OA_ID = '@852csxjn';
 var LINE_MSG_MAN = '紫の男性として登録';
 var url = 'https://line.me/R/oaMessage/' + LINE_OA_ID + '/?' + encodeURIComponent(LINE_MSG_MAN);
+var LIFF_URL = 'https://liff.line.me/2011799965-dbzL19Sg';  // LINEログイン付きの事前登録フォーム（2026-09-30〜）。空にすると oaMessage に戻る
+function liffUrl(place){
+  var q = new URLSearchParams(location.search), p = new URLSearchParams();
+  p.set('side', 'man');
+  ['utm_source','utm_medium','utm_campaign'].forEach(function(k){ if (q.get(k)) p.set(k, q.get(k)); });
+  if (!p.get('utm_source')) { p.set('utm_source', 'lp'); p.set('utm_medium', 'web'); }
+  p.set('utm_content', 'men_' + (place || 'body'));
+  return LIFF_URL + '?' + p.toString();
+}
 document.querySelectorAll('.js-line').forEach(function(a){
-  a.setAttribute('href', url);
+  a.setAttribute('href', LIFF_URL ? liffUrl(a.getAttribute('data-place')) : url);
   a.addEventListener('click', function(){
     if (window.gtag) gtag('event', 'line_cta_click', { side: 'man', placement: 'men_' + (a.getAttribute('data-place') || 'body') });
   });
