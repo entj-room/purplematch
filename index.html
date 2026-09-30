@@ -483,6 +483,15 @@ var LINE_MSG = {                                    // 追加後に自動で入�
   man:   '紫の男性として登録'
 };
 var LINE_OA_ID = '@852csxjn';                       // oaMessage 形式（メッセージ入力済み）で開く
+var LIFF_URL = 'https://liff.line.me/2011799965-dbzL19Sg';  // LINEログイン付きの事前登録フォーム（2026-09-30〜）。空にすると oaMessage に戻る
+function liffUrl(side, place){
+  var q = new URLSearchParams(location.search), p = new URLSearchParams();
+  p.set('side', side);
+  ['utm_source','utm_medium','utm_campaign'].forEach(function(k){ if (q.get(k)) p.set(k, q.get(k)); });
+  if (!p.get('utm_source')) { p.set('utm_source', 'lp'); p.set('utm_medium', 'web'); }
+  p.set('utm_content', 'lp_' + (place || 'body'));
+  return LIFF_URL + '?' + p.toString();
+}
 
 document.querySelectorAll('.js-line').forEach(function(a){
   var side = a.getAttribute('data-side');
@@ -490,6 +499,7 @@ document.querySelectorAll('.js-line').forEach(function(a){
   if (LINE_OA_ID && LINE_MSG[side]) {
     url = 'https://line.me/R/oaMessage/' + LINE_OA_ID + '/?' + encodeURIComponent(LINE_MSG[side]);
   }
+  if (LIFF_URL && (side === 'woman' || side === 'man')) url = liffUrl(side, a.getAttribute('data-place'));
   a.setAttribute('href', url);
   a.addEventListener('click', function(){
     if (window.gtag) gtag('event', 'line_cta_click', { side: side, placement: a.getAttribute('data-place') || (a.closest('section') && a.closest('section').className) || 'body' });
