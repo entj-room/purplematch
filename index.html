@@ -81,6 +81,13 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .btn.line{background:#06C755;color:#fff;box-shadow:0 10px 24px rgba(6,199,85,.28)}
 .btn.line.sub{background:#fff;color:#06A64A;border:1.5px solid #06C755;box-shadow:none}
 .btn.line.sub .ic{background:#E6F8EC}
+.btn.tomen{background:#2E1F4D;color:#fff;box-shadow:0 8px 20px rgba(46,31,77,.22)}
+.btn.tomen .ic{background:rgba(255,255,255,.12)}
+.btn.tomen .dot{width:10px;height:10px;border-radius:50%;background:#C9A45C;display:block}
+.fv .btn.tomen{padding:13px 18px;font-size:14px}
+.men .btn.tomen{margin-top:22px;background:#C9A45C;color:#1A1405;box-shadow:none}
+.men .btn.tomen .ic{background:rgba(0,0,0,.1)}
+.men .btn.tomen .dot{background:#2E1F4D}
 .btn.line .l small{opacity:.92}
 .btn .l small{display:block;font-weight:500;font-size:11.5px;opacity:.85;letter-spacing:.02em}
 .btn .arr{font-family:var(--en);font-size:18px}
@@ -230,7 +237,7 @@ footer .logo{margin-bottom:10px}
 <header>
   <div class="wrap">
     <a class="logo" href="#top"><span class="mark"></span><span><b>パープルマッチ</b><small>PURPLE MATCH</small></span></a>
-    <a class="hbtn js-line" data-side="header" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3-.1.9-.5 2.4-.6 2.8-.1.4.2.5.5.3.4-.2 3.1-2 4.3-2.8.6.1 1.2.1 1.8.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>LINEで事前登録</a>
+    <a class="hbtn js-line" data-side="woman" data-place="header" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3-.1.9-.5 2.4-.6 2.8-.1.4.2.5.5.3.4-.2 3.1-2 4.3-2.8.6.1 1.2.1 1.8.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>LINEで事前登録</a>
   </div>
 </header>
 
@@ -242,7 +249,7 @@ footer .logo{margin-bottom:10px}
     <p class="sub">空いてる日を送るだけ。<br><b>1時間のカフェデート</b>の予定がLINEに届きます。</p>
     <div class="cta2" id="cta">
       <a class="btn line js-line" data-side="woman" href="#"><span class="ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3-.1.9-.5 2.4-.6 2.8-.1.4.2.5.5.3.4-.2 3.1-2 4.3-2.8.6.1 1.2.1 1.8.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg></span><span class="l">女性はこちら｜LINEで事前登録<small>無料・1分で完了・タイプ不問</small></span><span class="arr">→</span></a>
-      <a class="btn line sub js-line" data-side="man" href="#"><span class="ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3-.1.9-.5 2.4-.6 2.8-.1.4.2.5.5.3.4-.2 3.1-2 4.3-2.8.6.1 1.2.1 1.8.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg></span><span class="l">紫の男性はこちら｜LINEで事前登録<small>ENTJ・ENTP・INTJ・INTP／無料</small></span><span class="arr">→</span></a>
+      <a class="btn tomen js-men" data-place="fv" href="men/"><span class="ic"><i class="dot"></i></span><span class="l">紫の男性はこちら<small>ENTJ・ENTP・INTJ・INTPの方</small></span><span class="arr">→</span></a>
     </div>
     <p class="line-note"><a class="fv-diag" href="shindan/">まずは相性診断から（3分・登録不要）→</a></p>
   </div>
@@ -353,8 +360,7 @@ footer .logo{margin-bottom:10px}
       <div class="mg"><h3>条件は最初から一致</h3><p>結婚を視野に入れた出会いを前提にしているので、温度差の探り合いがいりません。</p></div>
       <div class="mg"><h3>タイプと職業で審査</h3><p>16タイプの結果と職業を確認した方だけが登録できます。だから、女性側も安心して会えます。</p></div>
     </div>
-    <a class="btn line js-line" data-side="man" href="#"><span class="ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3-.1.9-.5 2.4-.6 2.8-.1.4.2.5.5.3.4-.2 3.1-2 4.3-2.8.6.1 1.2.1 1.8.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg></span><span class="l">LINEで事前登録する（男性）<small>ENTJ・ENTP・INTJ・INTP／無料・1分で完了</small></span><span class="arr">→</span></a>
-    <p style="margin-top:14px;text-align:center;font-size:13px"><a href="men/" style="color:#E6CD93;font-weight:700">男性向けの詳しい説明（女性の審査について）→</a></p>
+    <a class="btn tomen js-men" data-place="men" href="men/"><span class="ic"><i class="dot"></i></span><span class="l">紫の男性の事前登録はこちら<small>女性の審査・登録条件・デートの流れ</small></span><span class="arr">→</span></a>
   </div>
 </section>
 
@@ -452,7 +458,8 @@ footer .logo{margin-bottom:10px}
     <h2>頭で恋をする人と、<br>まず1時間、カフェで。</h2>
     <p class="lead">事前登録は無料・LINEで1分。リリース時に優先案内。</p>
     <div class="cta2">
-      <a class="btn line js-line" data-side="all" href="#"><span class="ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3-.1.9-.5 2.4-.6 2.8-.1.4.2.5.5.3.4-.2 3.1-2 4.3-2.8.6.1 1.2.1 1.8.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg></span><span class="l">LINEで事前登録する<small>無料・1分で完了・女性も男性もこちらから</small></span><span class="arr">→</span></a>
+      <a class="btn line js-line" data-side="woman" data-place="final" href="#"><span class="ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3-.1.9-.5 2.4-.6 2.8-.1.4.2.5.5.3.4-.2 3.1-2 4.3-2.8.6.1 1.2.1 1.8.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg></span><span class="l">LINEで事前登録する<small>女性の方・無料・1分で完了</small></span><span class="arr">→</span></a>
+      <p class="line-note"><a href="men/" class="js-men" data-place="final" style="color:var(--p2);font-weight:700">紫の男性の方はこちら →</a></p>
     </div>
   </div>
 </section>
@@ -484,7 +491,12 @@ document.querySelectorAll('.js-line').forEach(function(a){
   }
   a.setAttribute('href', url);
   a.addEventListener('click', function(){
-    if (window.gtag) gtag('event', 'line_cta_click', { side: side, placement: side === 'header' ? 'header' : a.closest('section') && a.closest('section').className || 'body' });
+    if (window.gtag) gtag('event', 'line_cta_click', { side: side, placement: a.getAttribute('data-place') || (a.closest('section') && a.closest('section').className) || 'body' });
+  });
+});
+document.querySelectorAll('.js-men').forEach(function(a){
+  a.addEventListener('click', function(){
+    if (window.gtag) gtag('event', 'men_lp_click', { placement: a.getAttribute('data-place') || 'body' });
   });
 });
 </script>
